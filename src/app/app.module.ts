@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule} from '@angular/http';
 import { ToasterModule, ToasterService } from 'angular2-toaster';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModulesModule } from './modules/modules.module';
@@ -20,7 +19,6 @@ import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule,
     ToasterModule,
     ModulesModule,
     ServicesModule,
