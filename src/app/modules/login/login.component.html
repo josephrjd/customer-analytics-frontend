@@ -1,0 +1,47 @@
+<div class="background row">
+
+  <span class="col-lg-1 display-panel"></span>
+  <span class="col-lg-3 display-panel">
+    <img class="img-class align-center" src="../../../assets/iot.png">
+  </span>
+  <span class="col-lg-1 display-panel"></span>
+  <span class="col-lg-2 display-panel">
+    <img class="img-class align-center" src="../../../assets/brain.png">
+  </span>
+  <span class="col-lg-1 display-panel"></span>
+  <span class="col-lg-4 login-panel">
+    <div class="row align-center">
+
+      <form>
+        <span class="row">
+          <span class="col-lg-2"></span>
+          <span class="col-lg-6 login-message">Account login</span>
+          <span class="col-lg-4"></span>
+        </span>
+
+
+        <span class="row">
+          <span class="col-lg-3"></span>
+          <input [(ngModel)]="username" type="text" placeholder="Username"
+                 class="cred-field col-lg-6" name="username"/>
+          <span class="col-lg-3"></span>
+        </span>
+
+        <span class="row">
+          <span class="col-lg-3"></span>
+          <input [(ngModel)]="password" type="password" placeholder="Password"
+                 class="cred-field col-lg-6" name="password"/>
+          <span class="col-lg-3"></span>
+        </span>
+
+        <span class="row">
+          <span class="col-lg-3"></span>
+          <span class="col-lg-2">
+            <button class="login-button" (click)="login()" type="submit">Login</button>
+          </span>
+          <span class="col-lg-7">Forgot password?</span>
+        </span>
+      </form>
+    </div>
+  </span>
+</div>
