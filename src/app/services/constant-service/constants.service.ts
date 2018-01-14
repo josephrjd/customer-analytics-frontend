@@ -4,10 +4,13 @@ import { Injectable } from '@angular/core';
 export class ConstantsService {
 
   ///////////// Server details //////////////////
-  server = 'http://10.1.182.88:8081';
+  server = 'http://localhost:8081';
+
+  ///////////// Mappings ///////////////////////
+  loginURL = '/login';
 
   ///////////// Constants ///////////////////////
-  loginURL = '/login';
+  websiteName = 'Customer analytics';
 
   ///////////// Messages ////////////////////////
   loginSuccess = 'Welcome to customer analytics';
