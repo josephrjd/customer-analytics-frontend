@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConstantsService } from '../../services/constant-service/constants.service';
 
 @Component({
   selector: 'app-top-panel',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopPanelComponent implements OnInit {
 
-  constructor() { }
+  websiteName = this.contants.websiteName;
+
+  constructor(private contants: ConstantsService) { }
 
   ngOnInit() {
   }

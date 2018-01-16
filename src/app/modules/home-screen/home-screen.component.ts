@@ -11,7 +11,7 @@ export class HomeScreenComponent implements OnInit {
   constructor(private commonService: CommonService) { }
 
   ngOnInit() {
-    this.commonService.httpRequest('get', '/someAPI').subscribe(
+    this.commonService.httpRequest('get', '/someAPI/').subscribe(
       response => console.log('here')
     );
   }

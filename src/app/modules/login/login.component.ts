@@ -17,7 +17,10 @@ export class LoginComponent implements OnInit {
   data = {};
   loginHandler(serverResponse) {
     // checking if token exist
+
     if (serverResponse.hasOwnProperty('token')) {
+      localStorage.removeItem('currentUser');
+      localStorage.setItem('currentUser', serverResponse.token );
       this.toasterService.pop('success', this.constants.loginSuccess, '');
       this.router.navigate(['/home']);
     // else checking the status
